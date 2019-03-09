@@ -1,4 +1,4 @@
-import * as ncp from "copy-paste";
+//import * as ncp from "copy-paste";
 import { Range, window } from "vscode";
 import * as vscode from "vscode";
 import { Executor } from "./Executor";
