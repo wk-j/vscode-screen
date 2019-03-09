@@ -1,9 +1,9 @@
 {
-    "name": "httpie",
+    "name": "screen",
     "fileTypes": [
-        "httpie"
+        "screen"
     ],
-    "scopeName": "source.httpie",
+    "scopeName": "source.screen",
     "patterns": [
         {
             "match": "(http)\\s",

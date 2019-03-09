@@ -1,14 +1,9 @@
-#addin "nuget:?package=Cake.SquareLogo"
+#addin "wk.StartProcess"
 
-Task("Create-Icon").Does(() => {
-    var settings = new LogoSettings {
-        // FontFamily = "Papyrus",
-        FontSize = 50,
-        Padding = 30,
-        Foreground = "White",
-        Background = "Blue"
-    };
-    CreateLogo("HTTPie", "images/icon.png", settings);
+using PS = StartProcess.Processor;
+
+Task("Default").Does(() => {
+    PS.StartProcess("dotnet script scripts/CreateLogo.csx");
 });
 
-RunTarget("Create-Icon");
+RunTarget("Default");

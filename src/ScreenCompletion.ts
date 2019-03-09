@@ -41,7 +41,7 @@ const options = [
     "--debug"
 ]
 
-export class HttpieCompletion implements vscode.CompletionItemProvider {
+export class ScreenCompletion implements vscode.CompletionItemProvider {
     public provideCompletionItems(
         document: vscode.TextDocument,
         position: vscode.Position,

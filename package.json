@@ -1,13 +1,13 @@
 {
-    "name": "vscode-httpie",
-    "displayName": "HTTPie",
-    "description": "HTTPie suport for Visual Studio Code",
-    "version": "0.0.2",
+    "name": "vscode-screen",
+    "displayName": "Screen",
+    "description": "Send command to terminal screen",
+    "version": "0.0.1",
     "publisher": "wk-j",
     "icon": "images/icon.png",
     "repository": {
         "type": "git",
-        "url": "https://github.com/wk-j/vscode-httpie"
+        "url": "https://github.com/wk-j/vscode-screen"
     },
     "engines": {
         "vscode": "^1.19.0"
@@ -16,29 +16,28 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:httpie-client.request",
-        "onLanguage:httpie"
+        "onCommand:screen-client.request",
+        "onLanguage:screen"
     ],
     "main": "./out/extension",
     "contributes": {
         "languages": [
             {
-                "id": "httpie",
+                "id": "screen",
                 "aliases": [
-                    "HTTPIE",
-                    "httpie",
-                    "Httpie"
+                    "SCREEN",
+                    "screen"
                 ],
                 "extensions": [
-                    ".httpie"
+                    ".screen"
                 ]
             }
         ],
         "grammars": [
             {
-                "language": "httpie",
-                "scopeName": "source.httpie",
-                "path": "./syntaxes/httpie.json"
+                "language": "screen",
+                "scopeName": "source.screen",
+                "path": "./syntaxes/screen.json"
             }
         ],
         "snippets": [],
